@@ -1,15 +1,11 @@
-import React from "react";
-
-// delete just a dev array to play with
-const fruits = ["f1", "f2"];
+// Helper array functions
 
 // Return a random item from items array
 function choice(items) {
   // generate random number between 0 - number of items
   let r = Math.floor(Math.random() * items.length);
-
-  //   console log the number
-  console.log(r);
+  // return random item from items
+  return items[r];
 }
 
 // remove first matching item from items, if item exists and returns it. Otherwise returns undefined
